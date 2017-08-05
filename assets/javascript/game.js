@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// Global Variables
 	var myScore = 0;
 	var wins = 0;
 	var losses = 0;
@@ -9,64 +10,65 @@ $(document).ready(function() {
 	var gem3 = 0;
 	var gem4 = 0;
 
-
-
+// Create Random Numbers to Match and for Gems
 function getRandom() {
+	// Set Minimum for the Match Number
 	var minMatch = 19;
+	// Set Maximum for the Match Number
 	var maxMatch = 120;
+	// Set Minimum for the Gems
 	var minGem = 1;
+	// Set Miaxmum for the Gems
 	var maxGem = 12;
+	// Creat Match Number
 	randomNumber = Math.floor(Math.random() * ((maxMatch-minMatch) + 1) + minMatch);
 	$('#matchNumber').html(randomNumber);
 
-
+	// Create 4 random Gem numbers
 	gem1 = Math.floor(Math.random() * ((maxGem-minGem) + 1) + minGem);
-	console.log("gem1: ", gem1);
 	gem2 = Math.floor(Math.random() * ((maxGem-minGem) + 1) + minGem);
-	console.log("gem2: ", gem2);
 	gem3 = Math.floor(Math.random() * ((maxGem-minGem) + 1) + minGem);
-	console.log("gem3: ", gem3);
-	gem4 = Math.floor(Math.random() * ((maxGem-minGem) + 1) + minGem);
-	console.log("gem4: ", gem4);
+	gem4 = Math.floor(Math.random() * ((maxGem-minGem) + 1) + minGem)
 
 }
 
+
+// Function to Start Game
 function startGame() {
 
-	getRandom();
-	console.log('1st Random: ', randomNumber)
+	// Get Random Numbers
+	getRandom();	
 	
-	
-	
+	// On Click of Gem 1 
 	$("#gem1").on("click", function() {
 		myScore += gem1;
 		$('#yourNumber').text(myScore);
-		console.log('myScore: ', myScore);
 		winLoss();
 	})
 
+	// On Click of Gem 2
 	$("#gem2").on("click", function() {
 		myScore += gem2;
 		$('#yourNumber').text(myScore);
-		console.log('myScore: ', myScore);
 		winLoss();
 	})
 
+	// On Click of Gem 3
 	$("#gem3").on("click", function() {
 		myScore += gem3;
 		$('#yourNumber').text(myScore);
-		console.log('myScore: ', myScore);
 		winLoss();
 	})
 
+	// On Click of Gem 4
 	$("#gem4").on("click", function() {
 		myScore += gem4;
 		$('#yourNumber').text(myScore);
-		console.log('myScore: ', myScore);
 		winLoss();
 	})
 }
-
+	
+	// Check to see if you Win or Lose
 	function winLoss() {
 		if (myScore === randomNumber) {
 				wins += 1;			
@@ -74,14 +76,7 @@ function startGame() {
 				$("#win").text(wins);
 				myScore = 0;
 				$('#yourNumber').text(myScore);
-				getRandom();
-				console.log('2nd Random: ', randomNumber);
-				console.log("2nd gem1: ", gem1);
-				console.log("2nd gem2: ", gem2);
-				console.log("2nd gem3: ", gem3);
-				console.log("2nd gem4: ", gem4);
-				
-
+				getRandom();		
 
 
 			} else if (myScore > randomNumber) {
@@ -91,18 +86,12 @@ function startGame() {
 				myScore = 0;
 				$('#yourNumber').text(myScore);
 				getRandom();
-				console.log('2nd Random: ', randomNumber);
-				console.log("2nd gem1: ", gem1);
-				console.log("2nd gem2: ", gem2);
-				console.log("2nd gem3: ", gem3);
-				console.log("2nd gem4: ", gem4);
 				
 			}
 		
 	}
 
-	
-
+// Call Start Game Function
 startGame();
 
 
