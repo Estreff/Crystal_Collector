@@ -1,0 +1,106 @@
+body {
+	height: 100%;
+	width:100%;
+	background-image: url("../images/polaroid_@2x.png");
+}
+
+.pageTitle{
+	height: 100px;
+	background-color: brown;
+	color: white;
+	margin:20px 0 0 20px;
+}
+
+.pageTitle h1{
+	font-size:48px;
+	font-style: bolder;
+}
+
+.instructions {
+	background-color: tan;
+	margin:20px 0 0 20px;
+	color: green;
+}
+
+.match {
+	background-color: lightgreen;
+	margin:20px 0 0 20px;
+	height: 120px;
+}
+
+.match h4 {
+	font-style: bolder;
+	font-size: 36px;
+	border-bottom: 0px;
+}
+
+.match div {
+	margin: 0;
+}
+
+#matchNumber {
+	font-size: 48px;
+	margin: 0 0 40px 20px;
+}
+
+.winLoss {
+	background-color: cyan;
+	color: navy;
+	margin:20px 0 0 20px;
+	height: 120px;
+	
+}
+
+.winLoss div{
+	font-style: bolder;
+	text-align: left;
+	font-size: 14px;
+	margin:20px 10px 20px 0;
+}
+
+#win {
+	font-size: 18px;
+}
+
+#loss {
+	font-size: 18px;
+}
+
+.gems {
+	margin:20px 0 0 0px;
+}
+
+.gems img{
+	border: 1px solid lightgray;
+	background-color: white;
+	padding:10px;
+	margin: 0 0 0 5px;
+	
+}
+
+.gems img:hover {
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+
+
+.scoreTitle {
+	background-color: teal;
+	color: white;
+	height: 40px;
+	margin:20px 0 0 20px;
+}
+
+.score {
+	background-color: teal;
+	color: white;
+	height: 120px;
+	margin:20px 0px 20px 20px;
+}
+
+#yourNumber {
+	font-size: 80px;
+	text-align: center;
+	line-height: 120px;
+}

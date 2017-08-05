@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="container">		
+			<div class="row">
+				<div class="col-md-4 pageTitle">
+					<h1>Crystal Collector</h1>
+				</div>
+				<div class="col-md-8"></div>
+			</div>		
+		</header>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-md-6 instructions">
+					<h3>Instructions!!</h3>
+					<p>You will be given a number at the start of the game.</p>
+					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+						<p>Each time the game starts, the game will change the values of each crystal.</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-md-3 match">
+					<div class="row">
+						<div class="col-md-6"><h4>Match:</h4></div>
+						<div class="col-md-6" id="matchNumber"></div>
+					</div>
+				</div>
+				<div class="col-md-1 winLoss">
+					<div>Wins: <span id="win"></span></div>
+					<div>Losses: <span id="loss"></span></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div id="gem1" class="col-md-6 gems"><img src="http://spx-by-edd.de/attachments/Logo/rubin_rot.png?template=generic" height="100px" width="100px"></div>
+						<div id="gem2" class="col-md-6 gems"><img src="https://cdn.pixabay.com/photo/2013/07/13/13/18/berg-crystal-160776_960_720.png" height="100px" width="100px"></div>
+					</div>
+				</div>
+				<div class="col-md-3">	
+					<div class="row">
+						<div id="gem3" class="col-md-6 gems"><img src="https://cdn4.iconfinder.com/data/icons/free-crystal-icons/512/Emerald.png" height="100px" width="100px"></div>
+						<div id="gem4" class="col-md-6 gems"><img src="http://pre12.deviantart.net/0a38/th/pre/i/2016/306/8/c/yellow_quartz_gem__not_free_to_use__by_candyaicdraw-dan3nn5.png" height="100px" width="100px"></div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-3 scoreTitle">
+					<div><h4>Your Score:</h4></div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-3 score">
+					<div id="yourNumber"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
