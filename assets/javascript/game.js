@@ -3,11 +3,11 @@ $(document).ready(function() {
 	var myScore = 0;
 	var wins = 0;
 	var losses = 0;
-	var randomNumber;
-	var gem1;
-	var gem2;
-	var gem3;
-	var gem4;
+	var randomNumber = 0;
+	var gem1 = 0;
+	var gem2 = 0;
+	var gem3 = 0;
+	var gem4 = 0;
 
 
 
